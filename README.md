@@ -38,6 +38,11 @@ hence I had to mock external request to the api, so ```TestGetUserHandlerErrorFo
 All the tests for handlers are stored in handlers_test.go.
 The test for sanitizing user lastname, is stored in db_test.go
 
+### Run tests
+
+```
+go test
+```
 
 
 ## Frontend
@@ -63,6 +68,21 @@ Frontend will then be served on
 ```
 localhost:4200
 ```
+
+### Run tests
+
+Unit and integration tests
+
+```
+ng test
+```
+
+e2e tests
+
+```
+ng e2e
+```
+
 
 ### Testing tasks and my solution
 For testing existing login functionality, I had to write unit, integration and e2e tests.
