@@ -25,7 +25,7 @@ describe('ApiService', () => {
     expect(api).toBeTruthy();
   }));
 
-  it('should login a user with valid credentials', inject([ApiService, HttpClientTestingModule], (api: ApiService) => {
+  it('should return a user with valid credentials', inject([ApiService, HttpClientTestingModule], (api: ApiService) => {
     let expectedUser = {ID: 1, Email: 'demo@empatica.com', FirstName: "John", LastName: "Doe"};
     api.getUser(22).subscribe(user => expect(user).toEqual(
       expectedUser, 'should return expected user'),
