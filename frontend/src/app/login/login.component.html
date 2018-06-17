@@ -1,0 +1,16 @@
+<div>
+  <h1>Demo App Login</h1>
+  <form class="example-form" #loginForm="ngForm" (ngSubmit)="do()">
+    <mat-form-field class="input-field">
+      <input matInput placeholder="Email" value="" [(ngModel)]="email" name="email">
+    </mat-form-field>
+
+    <mat-form-field class="input-field">
+      <input matInput placeholder="Password" value="" type="password" [(ngModel)]="password" name="password">
+    </mat-form-field>
+
+    <div class="submit">
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+  </form>
+</div>
