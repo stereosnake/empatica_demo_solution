@@ -1,2 +1,0 @@
-1) The instruction should indicate that GO packages might be absent on local machine
-and they require installing using `go get $package`
