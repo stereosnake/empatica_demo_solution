@@ -78,7 +78,7 @@ ng test
 ```
 
 e2e tests
-
+require local api server up and running (./backend/api)
 ```
 ng e2e
 ```
